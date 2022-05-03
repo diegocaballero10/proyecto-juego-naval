@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Date;
+import java.util.Scanner;
 
 public class main {
     public class Persona<string> {
@@ -73,25 +74,9 @@ public class main {
             return contraseña;
         }
 
-        /*
-       public string pidedatos() {
 
-            Scanner usuario = new Scanner(System.in);
-            System.out.println("BIENVENIDO A BATALLANAVAL");
-            System.out.println("ingrese nombre:");
-            String nombrep = usuario.nextLine();
-            return (string) nombre;
-        }
 
-        public string pidecontraseña(String contraseña) {
 
-            Scanner usuario = new Scanner(System.in);
-            System.out.println("BIENVENIDO A BATALLANAVAL");
-            System.out.println("ingrese contraseña:");
-            contraseña = usuario.nextLine();
-            return (string) contraseña;
-        }
-*/
         private void login(string nombre, string contraseña) throws IOException {
 
             BufferedReader reader = new BufferedReader(new FileReader("usuarioycontraseña.csv"));
